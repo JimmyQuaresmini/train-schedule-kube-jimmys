@@ -32,8 +32,9 @@ task zip(type: Zip) {
 }
 
 //declare task dependencies
+//replacing "npm_build" with "npm_run" as "npm build" no longer works
 build.dependsOn zip
-zip.dependsOn npm_build
-npm_build.dependsOn npm_test
+zip.dependsOn npm_run
+npm_run.dependsOn npm_test
 npm_test.dependsOn npmInstall
-npm_build.dependsOn npmInstall
+npm_run.dependsOn npmInstall
