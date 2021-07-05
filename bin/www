@@ -2,17 +2,21 @@
 
 /**
  * Module dependencies.
+ *
+ * changing this line on 5th of July 2021
  */
 
 var app = require('../app');
-var debug = require('debug')('cicd-pipeline-train-schedule-git:server');
+var debug = require('debug')('train-schedule-kube-jimmys:server');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
+ *
+ * Changed port from 8080 to 32000 on 5th of July 2021
  */
 
-var port = normalizePort(process.env.PORT || '8080');
+var port = normalizePort(process.env.PORT || '32000');
 app.set('port', port);
 
 /**
