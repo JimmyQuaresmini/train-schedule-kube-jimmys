@@ -16,7 +16,7 @@ var http = require('http');
  * Changed port from 8080 to 32000 on 5th of July 2021
  */
 
-var port = normalizePort(process.env.PORT || '32000');
+var port = normalizePort(process.env.PORT || '8900');
 app.set('port', port);
 
 /**
