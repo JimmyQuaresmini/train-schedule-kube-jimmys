@@ -4,6 +4,9 @@
  * Module dependencies.
  *
  * changing this line on 5th of July 2021
+ * var debug = require('debug')('train-schedule-kube-jimmys:server');
+ * It was slightly different in the single quotes before.
+ * 
  */
 
 var app = require('../app');
