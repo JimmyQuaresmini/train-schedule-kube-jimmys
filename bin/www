@@ -16,7 +16,10 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  *
- * Changed port from 8080 to 32000 on 5th of July 2021
+ * Changed port from 8080 to 32000 on 5th of July 2021.
+ * Changed port again to 8900 on the 9th of July.
+ * It only uses this if the environment does not provide a port.
+ * 
  */
 
 var port = normalizePort(process.env.PORT || '8900');
